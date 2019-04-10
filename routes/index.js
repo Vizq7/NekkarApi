@@ -1,5 +1,5 @@
 const express = require("express")
-const TodoController = require("../todosControllers/todos")
+const TodoController = require("../todosControllers/todos").todoController
 const router = express.Router();
 
 router.get('/api/v1/GetTodo', TodoController.getAllTodos);
