@@ -13,7 +13,9 @@
     "babel-cli": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
     "body-parser": "^1.18.3",
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "sequelize": "^5.3.3",
+    "tedious": "^6.1.0"
   },
   "devDependencies": {
     "eslint": "^5.16.0",
