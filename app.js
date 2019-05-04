@@ -32,6 +32,10 @@ app.listen(process.env.PORT || 5000, () => {
   .authenticate()
   .then(() => {
     console.log('Connection has been established successfully.');
+    sequelize
+      .query("select * from ReferenceTypes").then(rows => {
+        console.log(rows);
+      })
   })
   .catch(err => {
     console.error('Unable to connect to the database:', err);
