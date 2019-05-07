@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Validation.Views.Menu"
+             xmlns:pages="clr-namespace:Validation.Views">
+    <MasterDetailPage.Master>
+        <ContentPage
+            Title="Menú2"
+            BackgroundColor="#2196F3"
+            Padding="0,15,0,0">
+            <StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <BoxView WidthRequest="72" CornerRadius="36" HeightRequest="72" Margin="20,10,10,10" Color="White"></BoxView>
+                    <Label TextColor="Black" VerticalOptions="Center" x:Name="lblNom2" Text="Usuari Pepito" Margin="10,10,10,10" FontSize="Large" BackgroundColor="Bisque"></Label>
+                </StackLayout>
+                <ListView BackgroundColor="#424242" x:Name="ListMenu" ItemSelected="ListMenu_ItemSelected" >
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ImageCell TextColor="{Binding Color}" DetailColor="White" Height="25" 
+                                   Text="{Binding MenuTitle}">
+                            </ImageCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </ContentPage>
+    </MasterDetailPage.Master>
+</MasterDetailPage>
