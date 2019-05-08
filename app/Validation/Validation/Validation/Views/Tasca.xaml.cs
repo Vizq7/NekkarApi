@@ -16,8 +16,26 @@ namespace Validation.Views
 		{
 			InitializeComponent ();
             CarregarDades(tasques);
-           
+
+            btnDownload.Clicked += BtnDownload_Clicked;
             //tasques.Image;
+        }
+
+        private void BtnDownload_Clicked(object sender, EventArgs e)
+        {
+
+            lblDownload.IsVisible = true;
+            EffectDownload();
+            
+        }
+
+        private async void EffectDownload()
+        {
+            await lblDownload.FadeTo(0.1, 100, Easing.Linear);
+            await lblDownload.FadeTo(1, 2500, Easing.Linear);
+            await lblDownload.FadeTo(0.01, 1300, Easing.Linear);
+            lblDownload.IsVisible = false;
+
         }
 
         private void CarregarDades(ModelTasques tasques)

@@ -44,6 +44,24 @@ namespace Validation.Models.Local
                     Location = "e",
                     Details = "e",
                 },
+                new ModelTasques
+                {
+                    Name = "e",
+                    Location = "e",
+                    Details = "e",
+                },
+                new ModelTasques
+                {
+                    Name = "e",
+                    Location = "e",
+                    Details = "e",
+                },
+                new ModelTasques
+                {
+                    Name = "e",
+                    Location = "e",
+                    Details = "e",
+                },
             };
         }
 

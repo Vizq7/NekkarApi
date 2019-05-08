@@ -4,9 +4,28 @@
              x:Class="Validation.Views.Tasca">
     <ContentPage.Content>
         <StackLayout>
+            <Image x:Name="imgHeader"></Image>
             <Label x:Name="lbl1"/>
             <Label x:Name="lbl2"/>
             <Label x:Name="lbl3"/>
+            <AbsoluteLayout HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand">
+                <Label IsVisible="False" FontSize="Large" TextColor="Black" FontAttributes="Bold" x:Name="lblDownload" Text="Downloading..."></Label>
+                
+            </AbsoluteLayout>
+            <AbsoluteLayout x:Name="layFav" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand">
+                <Button
+                    x:Name="btnDownload"
+                    Margin="10,10,10,10"
+                    WidthRequest = "80"
+                    HeightRequest = "80"
+                    CornerRadius = "40"
+                    VerticalOptions = "Center"
+                    HorizontalOptions = "Center"
+                    BackgroundColor = "#2196F3"
+                    Grid.Row = "1"
+                    Image="download_white.png"
+                    Grid.Column = "0" />
+            </AbsoluteLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -315,4 +315,8 @@ C:\Users\admin\Documents\NekkarApi\app\Validation\Validation\Validation.Android\
 C:\Users\admin\Documents\NekkarApi\app\Validation\Validation\Validation.Android\obj\Debug\81\android\assets\Xamarin.Forms.Core.pdb
 C:\Users\admin\Documents\NekkarApi\app\Validation\Validation\Validation.Android\obj\Debug\81\android\assets\Xamarin.Forms.Platform.Android.pdb
 C:\Users\admin\Documents\NekkarApi\app\Validation\Validation\Validation.Android\obj\Debug\81\android\assets\Xamarin.Forms.Xaml.pdb
+C:\Users\admin\Documents\NekkarApi\app\Validation\Validation\Validation.Android\obj\Debug\81\res\drawable\download_black.png
+C:\Users\admin\Documents\NekkarApi\app\Validation\Validation\Validation.Android\obj\Debug\81\res\drawable\download_white.png
+C:\Users\admin\Documents\NekkarApi\app\Validation\Validation\Validation\bin\Debug\netstandard2.0\Validation.dll
+C:\Users\admin\Documents\NekkarApi\app\Validation\Validation\Validation.Android\bin\Debug\Validation.dll.mdb
 C:\Users\admin\Documents\NekkarApi\app\Validation\Validation\Validation.Android\obj\Debug\81\linksrc\Validation.dll.mdb
