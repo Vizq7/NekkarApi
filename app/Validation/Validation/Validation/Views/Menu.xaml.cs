@@ -24,8 +24,8 @@ namespace Validation.Views
             Detail = new NavigationPage(new Views.Tasques());
             List<MenuTipus> menu = new List<MenuTipus>
             {
-                new MenuTipus{ Page = new Views.Tasques(), MenuTitle= "Tasques", Color="White" },
-                new MenuTipus{ Page = new Views.Control(), MenuTitle= "Control", Color="White"},
+                new MenuTipus{ Page = new Views.Tasques(), MenuTitle= "Tasques", Color="Black" },
+                new MenuTipus{ Page = new Views.Control(), MenuTitle= "Control", Color="Black"},
                 new MenuTipus{ Page =new Views.Login(), MenuTitle = "Tancar sesió", Color="Red"},
         };
             ListMenu.ItemsSource = menu;

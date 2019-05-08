@@ -12,10 +12,31 @@ namespace Validation.Views
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Tasques : ContentPage
 	{
+		ModelTasques model;
+		protected override async void OnAppearing()
+		{
+            
+            lstTasques.ItemsSource = Models.Local.DadesTasques.tasques;
+            lstTasques.SelectedItem = null;
+        }
+
 		public Tasques ()
 		{
 			InitializeComponent ();
-            lstTasques.ItemsSource = Models.Local.DadesTasques.tasques;
-        }
+
+			lstTasques.ItemSelected += LstTasques_ItemSelected;
+		}
+
+		private void LstTasques_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+		{
+			if (e.SelectedItem == null)
+			{
+				return;
+			}
+			model = e.SelectedItem as ModelTasques;
+			Navigation.PushAsync(new Views.Tasca(model));
+		}
+
+
 	}
 }

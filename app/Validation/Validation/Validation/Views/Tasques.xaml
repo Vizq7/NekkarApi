@@ -12,9 +12,9 @@
                             <StackLayout BackgroundColor="White" Orientation="Horizontal" Margin="5,5,5,5">
                                 <!--<Image Source="{Binding Image}" Aspect="AspectFill" WidthRequest="100"/>-->
                                 <BoxView WidthRequest="100" Color="Yellow"></BoxView>
-                                <StackLayout Orientation="Horizontal">
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
                                     <StackLayout Orientation="Vertical">
-                                        <Label Text="{Binding Location}" TextColor="#000" />
+                                        <Label Text="{Binding Name}" TextColor="#000" />
                                         <Label Text="{Binding Location}" TextColor="#000" />
                                     </StackLayout>
                                     <StackLayout HorizontalOptions="EndAndExpand">

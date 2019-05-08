@@ -15,9 +15,10 @@ namespace Validation.Models.Local
             {
                 new ModelTasques
                 {
-                    Name = "a",
-                    Location = "a",
-                    Details = "a",
+                    Name = "Lijar ala",
+                    Location = "Se requieren 2 personas",
+                    Details = "12:45",
+                    
                 },
                 new ModelTasques
                 {

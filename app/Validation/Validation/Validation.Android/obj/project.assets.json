@@ -909,11 +909,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\admin\\Desktop\\API\\ValidationAPP\\Validation\\Validation\\Validation.Android\\Validation.Android.csproj",
+      "projectUniqueName": "C:\\Users\\admin\\Documents\\NekkarApi\\app\\Validation\\Validation\\Validation.Android\\Validation.Android.csproj",
       "projectName": "Validation.Android",
-      "projectPath": "C:\\Users\\admin\\Desktop\\API\\ValidationAPP\\Validation\\Validation\\Validation.Android\\Validation.Android.csproj",
+      "projectPath": "C:\\Users\\admin\\Documents\\NekkarApi\\app\\Validation\\Validation\\Validation.Android\\Validation.Android.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\admin\\Desktop\\API\\ValidationAPP\\Validation\\Validation\\Validation.Android\\obj\\",
+      "outputPath": "C:\\Users\\admin\\Documents\\NekkarApi\\app\\Validation\\Validation\\Validation.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -930,8 +930,8 @@
       "frameworks": {
         "monoandroid81": {
           "projectReferences": {
-            "C:\\Users\\admin\\Desktop\\API\\ValidationAPP\\Validation\\Validation\\Validation\\Validation.csproj": {
-              "projectPath": "C:\\Users\\admin\\Desktop\\API\\ValidationAPP\\Validation\\Validation\\Validation\\Validation.csproj"
+            "C:\\Users\\admin\\Documents\\NekkarApi\\app\\Validation\\Validation\\Validation\\Validation.csproj": {
+              "projectPath": "C:\\Users\\admin\\Documents\\NekkarApi\\app\\Validation\\Validation\\Validation\\Validation.csproj"
             }
           }
         }

@@ -13,10 +13,10 @@
                     <BoxView WidthRequest="72" CornerRadius="36" HeightRequest="72" Margin="20,10,10,10" Color="White"></BoxView>
                     <Label TextColor="Black" VerticalOptions="Center" x:Name="lblNom2" Text="Usuari Pepito" Margin="10,10,10,10" FontSize="Large" BackgroundColor="Bisque"></Label>
                 </StackLayout>
-                <ListView BackgroundColor="#424242" x:Name="ListMenu" ItemSelected="ListMenu_ItemSelected" >
+                <ListView BackgroundColor="White" x:Name="ListMenu" ItemSelected="ListMenu_ItemSelected" >
                     <ListView.ItemTemplate>
                         <DataTemplate>
-                            <ImageCell TextColor="{Binding Color}" DetailColor="White" Height="25" 
+                            <ImageCell TextColor="{Binding Color}" DetailColor="Black" Height="25" 
                                    Text="{Binding MenuTitle}">
                             </ImageCell>
                         </DataTemplate>

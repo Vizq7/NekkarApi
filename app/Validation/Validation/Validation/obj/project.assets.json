@@ -419,11 +419,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\admin\\Desktop\\API\\ValidationAPP\\Validation\\Validation\\Validation\\Validation.csproj",
+      "projectUniqueName": "C:\\Users\\admin\\Documents\\NekkarApi\\app\\Validation\\Validation\\Validation\\Validation.csproj",
       "projectName": "Validation",
-      "projectPath": "C:\\Users\\admin\\Desktop\\API\\ValidationAPP\\Validation\\Validation\\Validation\\Validation.csproj",
+      "projectPath": "C:\\Users\\admin\\Documents\\NekkarApi\\app\\Validation\\Validation\\Validation\\Validation.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\admin\\Desktop\\API\\ValidationAPP\\Validation\\Validation\\Validation\\obj\\",
+      "outputPath": "C:\\Users\\admin\\Documents\\NekkarApi\\app\\Validation\\Validation\\Validation\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
