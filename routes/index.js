@@ -9,6 +9,7 @@ router.put('/api/v1/UpdateTodo/:id', TodoController.updateTodo);
 router.delete('/api/v1/DeleteTodo/:id', TodoController.deleteTodo);*/
 
 router.get('/api/v1/CheckUserExists/:userName/:password', userController.CheckUserExists)
+router.get('/api/v1/GetUserTasks/:id', userController.GetUserTasks)
 
 module.exports = {
     router
