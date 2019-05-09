@@ -74,12 +74,13 @@ class UserController{
         sequelizeFactory
           .authenticate()
           .then(() => {
-            sequelizeFactory.query("select r.descReference, r.Photo, r.ItemDescription " +
+            sequelizeFactory.query("select r.descReference, r.Photo, r.ItemDescription, r.idReference " +
             "from DailyUserTasks d, [References] r "+
             "where d.idUser = " + req.params.id + " " +
             "and r.idReference = d.idreference").then(rows => {
               if(rows[0].length > 0){
                 var data = {
+                  partId: rows[0][0].idReference,
                   partName: rows[0][0].descReference,
                   partPhoto: rows[0][0].Photo,
                   partDesc: rows[0][0].ItemDescription
@@ -98,6 +99,36 @@ class UserController{
       }else{
         return res.status(400).send({
           message: 'empty id user'
+        })
+      }
+    }
+
+    GetAssemblyPdf(req, res){
+      if(req.params.id){
+        sequelizeFactory
+          .authenticate()
+          .then(() => {
+            sequelizeFactory.query("select Instructions " +
+            "from AssemblyInstructions " +
+            "where idreference = " + req.params.id).then(rows =>{
+              if(rows[0].length > 0){
+                var data = {
+                  pdf: rows[0][0].Instructions
+                }
+
+                return res.status(200).send({
+                  message: data
+                })
+              }else{
+                return res.status(300).send({
+                  message: 'invalid id'
+                })
+              }
+            })
+          })
+      }else{
+        return res.status(400).send({
+          message: 'empty assembly id'
         })
       }
     }

@@ -10,6 +10,7 @@ router.delete('/api/v1/DeleteTodo/:id', TodoController.deleteTodo);*/
 
 router.get('/api/v1/CheckUserExists/:userName/:password', userController.CheckUserExists)
 router.get('/api/v1/GetUserTasks/:id', userController.GetUserTasks)
+router.get('/api/v1/GetAssemblyPdf/:id', userController.GetAssemblyPdf)
 
 module.exports = {
     router
