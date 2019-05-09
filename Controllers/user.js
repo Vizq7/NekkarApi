@@ -1,33 +1,5 @@
-const Sequelize = require("sequelize")
-var sequelizeSecureCore = new Sequelize("SecureCore", "nekkar", "S2am2018",{
-    host: "nekkar.database.windows.net",
-    dialect: "mssql",
-    pool: {
-      max: 5,
-      min: 0,
-      idle: 10000
-    },
-    dialectOptions: {
-      options: {
-        encrypt: true
-      }
-    }
-  })
-
-  var sequelizeFactory = new Sequelize("XWingsFactory", "nekkar", "S2am2018",{
-    host: "nekkar.database.windows.net",
-    dialect: "mssql",
-    pool: {
-      max: 5,
-      min: 0,
-      idle: 10000
-    },
-    dialectOptions: {
-      options: {
-        encrypt: true
-      }
-    }
-  })
+const sequelizeSecureCore = require("../Utils/databases").SecureCore
+const sequelizeFactory = require("../Utils/databases").XWingsFactory
   
 class UserController{
     

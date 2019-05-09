@@ -9,19 +9,6 @@ app.use(router.router);
 
 const PORT = 5000;
 
-app.listen(process.env.PORT || 5000, () => {
+app.listen(process.env.PORT || PORT, () => {
   console.log(`server running on port ${PORT}`)
-  
-  /*sequelize
-  .authenticate()
-  .then(() => {
-    console.log('Connection has been established successfully.');
-    sequelize
-      .query("select * from ReferenceTypes").then(rows => {
-        console.log(rows);
-      })
-  })
-  .catch(err => {
-    console.error('Unable to connect to the database:', err);
-  });*/
 });
