@@ -51,15 +51,8 @@ class UserController{
             "where d.idUser = " + req.params.id + " " +
             "and r.idReference = d.idreference").then(rows => {
               if(rows[0].length > 0){
-                var data = {
-                  partId: rows[0][0].idReference,
-                  partName: rows[0][0].descReference,
-                  partPhoto: rows[0][0].Photo,
-                  partDesc: rows[0][0].ItemDescription
-                }
-
                 return res.status(200).send({
-                  message: data
+                  message: rows[0]
                 })
               }else{
                 return res.status(400).send({
